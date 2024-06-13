@@ -1,0 +1,68 @@
+{
+    "title": "Pods Tasks",
+    "description": "tasks related to pods management",
+    "details": {
+      "intro": {
+        "text": "intro.md",
+        "background": "background.sh",
+        "foreground": "foreground.sh"
+      },
+      "steps": [
+        {
+          "title": "Weight: 2",
+          "text": "step1/create.md",
+          "verify": "step1/ver.sh"
+        },
+        {
+          "title": "weight: 3",
+          "text": "step2/create.md",
+          "foreground": "step2/foreground.sh",
+          "background": "step2/background.sh",
+          "verify":"step2/ver.sh"
+        },
+        {
+          "title": "weight: 7",
+          "text": "step3/tasks.md",
+          "foreground": "step3/foreground.sh",
+          "background": "step3/background.sh",
+          "verify":"step3/ver.sh"
+        },
+        {
+          "title": "weight: 7",
+          "text": "step4/tasks.md",
+          "foreground": "step4/foreground.sh",
+          "background": "step4/background.sh",
+          "verify":"step4/ver.sh"
+        },
+        {
+          "title": "weight: 7",
+          "text": "step5/tasks.md",
+          "foreground": "step5/foreground.sh",
+          "background": "step5/background.sh",
+          "verify":"step5/ver.sh"
+        },
+        {
+          "title": "weight: 7",
+          "text": "step6/tasks.md",
+          "foreground": "step6/foreground.sh",
+          "background": "step6/background.sh",
+          "verify":"step6/ver.sh"
+        }
+      ],
+      "finish": {
+        "text": "finish.md"
+      },
+      "assets":{
+        "host01": [
+          {
+            "file": "wait.sh",
+            "target": "/usr/local/bin/",
+            "chmod": "+x"
+          }
+        ]
+      }
+    },
+    "backend": {
+      "imageid": "kubernetes-kubeadm-2nodes"
+    }
+}
